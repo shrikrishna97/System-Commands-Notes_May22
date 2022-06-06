@@ -29,13 +29,13 @@
   - use `-d` for removing directories
   - `rm -r mydirectory`  
 * `mv`
-  - move , rename 
+  - move, rename 
   - `mv file1 ..` (moves file to parent dir)
   - `mv file1 file1a` (renames file1 to file1a)
 * `ps` 
   - displays the currently running processes
-  - *Note:* 
-  `ps --forest` displays current running processes in more user friendly way 
+  - ***Note:*** 
+  `ps --forest` displays current running processes in a more user-friendly way 
 * `clear`
   - or `ctrl-l` clear the screen 
 * `exit` 
@@ -52,6 +52,11 @@
   - 7 - Misc: macro packages and conventions
   - 8 - System admin commands
   - 9 - Kernel routines
+
+![](C:\Users\welcome\OneDrive\Pictures\Screenshots\Screenshot (260).png)
+
+## <img src="C:\Users\welcome\AppData\Roaming\Typora\typora-user-images\image-20220606141911899.png" alt="image-20220606141911899" style="zoom: 100%;" />
+
 * `cd`
   - change directory, eg: `cd ..` - goes to the parent directory
   - `cd` without any arguments will take you to the home directory
@@ -98,6 +103,11 @@
 * `cat` 
   - stands for concatenate
   - allows you to view the contents of a single file or multiple files (gets concatenated)
+
+### **Structure of a Command**
+
+<img src="C:\Users\welcome\OneDrive\Pictures\Screenshots\Screenshot (259).png" style="zoom:100%;" />
+
 ### File types 
 * output of `ls -l` : `drwxrwxrwx or lr-x--x--x or -rwx-wxr-x` (`l` indicates symbolic link/`d` indicates directory/`-` indicates file)
 * `-` Regular file
@@ -107,6 +117,9 @@
 * `b` Block file  (usually found in `/dev`; typically the hard disk)
 * `s` Socket file
 * `p` named pipe
+
+![image-20220606142809315](C:\Users\welcome\AppData\Roaming\Typora\typora-user-images\image-20220606142809315.png)
+
 ### Viewing and Adding to files
 * `cat` - to view the contents of a file
 * writing to a file : `>` eg : `echo "Hello world" > test.txt`
@@ -125,10 +138,12 @@
   - When you cd into that dir . will also have inode = 18874686
   - If We make a dir level2 inside level1 and then cd into level2 .. will have inode = 18874686 (no of hard links will increase by 1)
   - As the number of sub-directories increases the number of hard links also keeps increasing
+  - ![image-20220606142927622](C:\Users\welcome\AppData\Roaming\Typora\typora-user-images\image-20220606142927622.png)
 * users cannot create hard links for directories (level1 to level2 and level2 to level1 will create a back and forth)
   
 ### Permissions 
 * Files and directories do not inherit the parent directory permissions
+* ![image-20220606143023393](C:\Users\welcome\AppData\Roaming\Typora\typora-user-images\image-20220606143023393.png)
 * `rwxrwxrwx` (777)
   - 7 `rwx`
   - 6 `rw-`
@@ -144,7 +159,7 @@
 * All its parent directories should have `x` permission if you want to access a file. This works even without r and w permissions if you know the path.
 * `r` and `w` permissions along with `x` are required to `ls` a directory or `touch` a file into a directory
 * Removing a file works only if it has to write permission
-  
+* ![image-20220606143101714](C:\Users\welcome\AppData\Roaming\Typora\typora-user-images\image-20220606143101714.png)
 ### Linux Virtual Machine 
 * #### ISO 
   - image of Linux OS (Ubuntu 20.04 LTS for x86_64 platform)
@@ -158,6 +173,9 @@
 
 ### File System of Linux OS
 * Filesystem Hierarchy Standard FHS 3.0 (June 03, 2015) (refspecs.linuxfoundation.org/fhs.shtml)
+
+![image-20220606142143588](C:\Users\welcome\AppData\Roaming\Typora\typora-user-images\image-20220606142143588.png)
+
 * `/` is root directory and field separator or delimiter for sub-directories
 * `.` references the current directory (. is a special file in every directory)
 * `..` references the parent directory (.. is a special file in every directory)
@@ -194,7 +212,7 @@
   - `/var/tmp` : Temporary files preserved between reboots
 
 
-|          |    Shareable  | Un-Shareable |
-|----------|:-------------:|------:|
-| static   |  `/usr and /opt` | `/etc` and `/boot` |
-| variable |    `/var/mail`   |   `/var/run` and `/var/lock` |
+|          |    Shareable    |               Un-Shareable |
+| -------- | :-------------: | -------------------------: |
+| static   | `/usr and /opt` |         `/etc` and `/boot` |
+| variable |   `/var/mail`   | `/var/run` and `/var/lock` |
