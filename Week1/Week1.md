@@ -104,9 +104,9 @@
   - stands for concatenate
   - allows you to view the contents of a single file or multiple files (gets concatenated)
 
-### **Structure of a Command**
-
-<img src="C:\Users\welcome\OneDrive\Pictures\Screenshots\Screenshot (259).png" style="zoom:100%;" />
+<!-- ### **Structure of a Command** -->
+![](https://github.com/shrikrishna97/System-Commands-Notes_May22/blob/main/Week1/static/Screenshot%20(259).png)
+## <img src="[C:\Users\welcome\OneDrive\Pictures\Screenshots\Screenshot (259).png](https://github.com/shrikrishna97/System-Commands-Notes_May22/blob/main/Week1/static/Screenshot%20(259).png)" style="zoom:100%;" />
 
 ### File types 
 * output of `ls -l` : `drwxrwxrwx or lr-x--x--x or -rwx-wxr-x` (`l` indicates symbolic link/`d` indicates directory/`-` indicates file)
