@@ -33,11 +33,11 @@
   - `mv file1 ..` (moves file to parent dir)
   - `mv file1 file1a` (renames file1 to file1a)
 * `ps` 
-  - currently running processes
+  - displays the currently running processes
 * `clear`
-  - or ctrl+l
+  - or `ctrl-l` clear the screen 
 * `exit` 
-  - or ctrl+d
+  - or `ctrl+d` closes the shell
 * `man`
   - get help on any command in Linux. eg: man ls
   - man sections (1 to 9) eg: man 1 ls
