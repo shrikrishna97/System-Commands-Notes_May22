@@ -34,6 +34,8 @@
   - `mv file1 file1a` (renames file1 to file1a)
 * `ps` 
   - displays the currently running processes
+  - *Note:* 
+  `ps --forest` displays current running processes in more user friendly way 
 * `clear`
   - or `ctrl-l` clear the screen 
 * `exit` 
