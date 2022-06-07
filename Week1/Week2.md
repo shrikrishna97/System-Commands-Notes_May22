@@ -259,7 +259,7 @@
     - No space around the `=`
     - `"value string"` is the number, string, or `command`. The output of a command can be assigned to myvar by enclosing the command in back-ticks.
 
-  ![image-20220607134006038](C:\Users\welcome\AppData\Roaming\Typora\typora-user-images\image-20220607134006038.png)
+  ![image-20220607134006038](https://github.com/shrikrishna97/System-Commands-Notes_May22/blob/main/Week1/static/image-20220607134006038.png)
 
 * Exporting a variable
 
